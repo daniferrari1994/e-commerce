@@ -32,13 +32,13 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-zinc-900 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <ShoppingCart className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">TechStore</span>
+            <ShoppingCart className="h-8 w-8 text-zinc-400" />
+            <span className="text-2xl font-bold text-zinc-400">TechStore</span>
           </Link>
 
           {/* Search Bar - Hidden on mobile */}
@@ -47,7 +47,7 @@ export default function Header() {
               <input
                 type="text"
                 placeholder="Buscar productos..."
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-200 focus:border-transparent"
               />
               <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
             </div>
@@ -55,13 +55,13 @@ export default function Header() {
 
           {/* Navigation Links - Desktop */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/products" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link href="/products" className="text-gray-400 hover:text-gray-200 transition-colors">
               Productos
             </Link>
-            <Link href="/categories" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link href="/categories" className="text-gray-400 hover:text-gray-200 transition-colors">
               Categorías
             </Link>
-            <Link href="/offers" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link href="/offers" className="text-gray-400 hover:text-gray-200 transition-colors">
               Ofertas
             </Link>
           </nav>
@@ -100,17 +100,17 @@ export default function Header() {
                 
                 {/* User Dropdown Menu */}
                 {isUserMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50">
+                  <div className="absolute right-0 mt-2 w-48 bg-zinc-800 rounded-lg shadow-lg border z-50">
                     <div className="py-2">
                       <div className="px-4 py-2 border-b">
-                        <p className="text-sm font-medium text-gray-900">
+                        <p className="text-sm font-medium text-gray-400">
                           {user?.firstName} {user?.lastName}
                         </p>
-                        <p className="text-xs text-gray-500">{user?.email}</p>
+                        <p className="text-xs text-gray-300">{user?.email}</p>
                       </div>
                       <Link
                         href="/profile"
-                        className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        className="flex items-center px-4 py-2 text-sm text-gray-400 hover:bg-gray-200"
                         onClick={() => setIsUserMenuOpen(false)}
                       >
                         <Settings className="h-4 w-4 mr-2" />
@@ -118,7 +118,7 @@ export default function Header() {
                       </Link>
                       <Link
                         href="/orders"
-                        className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        className="flex items-center px-4 py-2 text-sm text-gray-400 hover:bg-gray-200"
                         onClick={() => setIsUserMenuOpen(false)}
                       >
                         <Package className="h-4 w-4 mr-2" />
@@ -136,7 +136,7 @@ export default function Header() {
                       )}
                       <button
                         onClick={handleLogout}
-                        className="flex items-center w-full px-4 py-2 text-sm text-red-600 hover:bg-red-50"
+                        className="flex items-center w-full px-4 py-2 text-sm text-red-700 hover:bg-red-600"
                       >
                         <LogOut className="h-4 w-4 mr-2" />
                         Cerrar sesión
@@ -196,7 +196,7 @@ export default function Header() {
                 <input
                   type="text"
                   placeholder="Buscar productos..."
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-200 focus:border-transparent"
                 />
                 <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
               </div>
@@ -204,21 +204,21 @@ export default function Header() {
               {/* Mobile Navigation */}
               <Link 
                 href="/products" 
-                className="text-gray-700 hover:text-blue-600 transition-colors py-2"
+                className="text-gray-400 hover:text-gray-200 transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Productos
               </Link>
               <Link 
                 href="/categories" 
-                className="text-gray-700 hover:text-blue-600 transition-colors py-2"
+                className="text-gray-400 hover:text-gray-200 transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Categorías
               </Link>
               <Link 
                 href="/offers" 
-                className="text-gray-700 hover:text-blue-600 transition-colors py-2"
+                className="text-gray-400 hover:text-gray-200 transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Ofertas
