@@ -2,6 +2,9 @@
 
 > Modern e-commerce application with Discord-themed design, built with React 19, TypeScript, and Vite.
 
+## 🌐 Live Demo
+**[View Live Project](https://daniferrari1994.github.io/e-commerce/)** 🚀
+
 ![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7.1.10-646CFF?style=flat&logo=vite&logoColor=white)
