@@ -1,0 +1,142 @@
+.country-currency-dropdown {
+  position: relative;
+}
+
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.dropdown-trigger:hover {
+  background-color: #f5f5f5;
+  border-color: #5865F2;
+}
+
+.country-flag {
+  font-size: 1.2rem;
+}
+
+.country-currency {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.85rem;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  z-index: 1000;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown-item.active {
+  background-color: #e3f2fd;
+  color: #5865F2;
+}
+
+.dropdown-item:first-child {
+  border-radius: 12px 12px 0 0;
+}
+
+.dropdown-item:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.country-name {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.dropdown-item .country-currency {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.dropdown-item.active .country-name {
+  color: #5865F2;
+}
+
+.dropdown-item.active .country-currency {
+  color: #5865F2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dropdown-trigger {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  
+  .country-flag {
+    font-size: 1rem;
+  }
+  
+  .country-currency {
+    font-size: 0.75rem;
+  }
+  
+  .dropdown-menu {
+    min-width: 180px;
+  }
+}
