@@ -5,3 +5,6 @@ export { default as SearchBar } from './SearchBar/index';
 export { default as CountryCurrencyDropdown } from './CountryCurrencyDropdown/index';
 export { default as UserProfileDropdown } from './UserProfileDropdown/index';
 export { default as CartButton } from './CartButton/index';
+export { default as ProductShowcase } from './ProductShowcase/index';
+export { default as CollectionsGrid } from './CollectionsGrid/index';
+export { default as Footer } from './Footer/index';

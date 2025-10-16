@@ -50,16 +50,56 @@
   transform: scale(1.02);
 }
 
-.carousel-image-title {
+/* Overlay Content */
+.carousel-overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.carousel-overlay-content {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.carousel-overlay-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c2f36;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.carousel-shop-button {
+  background: #5865F2;
   color: white;
-  padding: 2rem 1.5rem 1.5rem;
-  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.carousel-shop-button:hover {
+  background: #4752C4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(88, 101, 242, 0.3);
+}
+
+.carousel-shop-button:active {
+  transform: translateY(0);
 }
 
 .carousel-controls {
@@ -209,9 +249,23 @@
     height: 6px;
   }
   
-  .carousel-image-title {
-    font-size: 1rem;
-    padding: 1.5rem 1rem 1rem;
+  .carousel-overlay {
+    bottom: 1.5rem;
+  }
+  
+  .carousel-overlay-content {
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .carousel-overlay-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .carousel-shop-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -248,5 +302,24 @@
   .carousel-dot.active {
     width: 5px;
     height: 5px;
+  }
+  
+  .carousel-overlay {
+    bottom: 1rem;
+  }
+  
+  .carousel-overlay-content {
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+  }
+  
+  .carousel-overlay-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel-shop-button {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
   }
 }

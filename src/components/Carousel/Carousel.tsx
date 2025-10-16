@@ -6,6 +6,7 @@ interface CarouselImage {
   src: string;
   alt: string;
   title?: string;
+  url?: string;
 }
 
 interface CarouselProps {
@@ -13,6 +14,7 @@ interface CarouselProps {
   autoPlay?: boolean;
   autoPlayInterval?: number;
   onImageClick?: (image: CarouselImage, index: number) => void;
+  onShopNowClick?: (url: string, title: string) => void;
   className?: string;
 }
 
@@ -21,6 +23,7 @@ const Carousel: React.FC<CarouselProps> = ({
   autoPlay = false,
   autoPlayInterval = 5000,
   onImageClick,
+  onShopNowClick,
   className = ""
 }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -114,6 +117,12 @@ const Carousel: React.FC<CarouselProps> = ({
     return currentIndex - 1;
   };
 
+  const handleShopNowButtonClick = (url?: string, title?: string) => {
+    if (onShopNowClick && url && title) {
+      onShopNowClick(url, title);
+    }
+  };
+
   if (!images || images.length === 0) {
     return (
       <div className={`carousel empty ${className}`}>
@@ -145,9 +154,19 @@ const Carousel: React.FC<CarouselProps> = ({
                     className="carousel-image"
                     onClick={handleImageClick}
                   />
+                  
+                  {/* Overlay con título y botón */}
                   {image.title && (
-                    <div className="carousel-image-title">
-                      {image.title}
+                    <div className="carousel-overlay">
+                      <div className="carousel-overlay-content">
+                        <h2 className="carousel-overlay-title">{image.title}</h2>
+                        <button 
+                          className="carousel-shop-button"
+                          onClick={() => handleShopNowButtonClick(image.url, image.title)}
+                        >
+                          Shop Now
+                        </button>
+                      </div>
                     </div>
                   )}
                 </div>
