@@ -87,8 +87,6 @@ const SecondaryNav: React.FC<SecondaryNavProps> = ({
   return (
     <nav className={`secondary-nav ${className}`}>
       <div className="secondary-nav-container">
-        
-        {/* Collections Dropdown */}
         <div 
           className="nav-item dropdown"
           ref={(el) => { dropdownRefs.current.collections = el; }}
@@ -116,8 +114,6 @@ const SecondaryNav: React.FC<SecondaryNavProps> = ({
             </div>
           )}
         </div>
-
-        {/* Categories Dropdown */}
         <div 
           className="nav-item dropdown"
           ref={(el) => { dropdownRefs.current.categories = el; }}
@@ -130,7 +126,6 @@ const SecondaryNav: React.FC<SecondaryNavProps> = ({
             <span className="nav-text">Categories</span>
             <span className={`chevron ${openDropdown === 'categories' ? 'open' : ''}`}>▼</span>
           </button>
-          
           {openDropdown === 'categories' && (
             <div className="dropdown-menu two-columns">
               <div className="column">
@@ -160,8 +155,6 @@ const SecondaryNav: React.FC<SecondaryNavProps> = ({
             </div>
           )}
         </div>
-
-        {/* Shop All Button */}
         <div className="nav-item">
           <button
             className="nav-button shop-all-button"
@@ -170,8 +163,6 @@ const SecondaryNav: React.FC<SecondaryNavProps> = ({
             <span className="nav-text">Shop All</span>
           </button>
         </div>
-
-        {/* More Dropdown */}
         <div 
           className="nav-item dropdown"
           ref={(el) => { dropdownRefs.current.more = el; }}
@@ -184,7 +175,6 @@ const SecondaryNav: React.FC<SecondaryNavProps> = ({
             <span className="nav-text">More</span>
             <span className={`chevron ${openDropdown === 'more' ? 'open' : ''}`}>▼</span>
           </button>
-          
           {openDropdown === 'more' && (
             <div className="dropdown-menu single-column">
               {moreOptions.map((option) => (
@@ -199,7 +189,6 @@ const SecondaryNav: React.FC<SecondaryNavProps> = ({
             </div>
           )}
         </div>
-
       </div>
     </nav>
   );

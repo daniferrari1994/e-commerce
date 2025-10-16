@@ -75,7 +75,6 @@
   }
 }
 
-/* Pulse animation for when items are added */
 .cart-button.pulse {
   animation: pulseAnimation 0.6s ease;
 }
@@ -93,7 +92,6 @@
   }
 }
 
-/* Alternative styles */
 .cart-button.outline {
   background: white;
   border: 2px solid #5865F2;
@@ -111,7 +109,6 @@
   border-color: #4752C4;
 }
 
-/* Size variations */
 .cart-button.small {
   width: 40px;
   height: 40px;
@@ -142,7 +139,6 @@
   right: -6px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .cart-button {
     width: 45px;

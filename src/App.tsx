@@ -1,4 +1,4 @@
-import { Nav, SecondaryNav } from './components';
+import { Nav, SecondaryNav, Carousel } from './components';
 
 function App() {
   const handleSearch = (query: string) => {
@@ -33,6 +33,43 @@ function App() {
     console.log('Opción More seleccionada:', option);
   };
 
+  const handleImageClick = (image: any, index: number) => {
+    console.log('Imagen clickeada:', image, 'índice:', index);
+  };
+
+  const carouselImages = [
+    {
+      id: '1',
+      src: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=500&fit=crop',
+      alt: 'Promoción 1',
+      title: 'Nueva Colección DISXCORE'
+    },
+    {
+      id: '2',
+      src: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1200&h=500&fit=crop',
+      alt: 'Promoción 2',
+      title: 'Discord Developers Gear'
+    },
+    {
+      id: '3',
+      src: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=500&fit=crop',
+      alt: 'Promoción 3',
+      title: 'Camp Wumpus Collection'
+    },
+    {
+      id: '4',
+      src: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&h=500&fit=crop',
+      alt: 'Promoción 4',
+      title: 'Gaming Accessories'
+    },
+    {
+      id: '5',
+      src: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=500&fit=crop',
+      alt: 'Promoción 5',
+      title: 'Special Offers'
+    }
+  ];
+
   return (
     <div>
       <Nav 
@@ -48,10 +85,12 @@ function App() {
         onShopAllClick={handleShopAllClick}
         onMoreSelect={handleMoreSelect}
       />
-      <main>
-        <h1>E-Commerce Discord</h1>
-        <p>¡Bienvenido a nuestro e-commerce!</p>
-      </main>
+      <Carousel
+        images={carouselImages}
+        autoPlay={true}
+        autoPlayInterval={4000}
+        onImageClick={handleImageClick}
+      />
     </div>
   )
 }

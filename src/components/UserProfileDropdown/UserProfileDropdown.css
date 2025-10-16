@@ -171,7 +171,6 @@
   font-weight: 500;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .user-menu {
     min-width: 220px;
