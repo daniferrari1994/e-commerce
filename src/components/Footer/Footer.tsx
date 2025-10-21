@@ -2,12 +2,12 @@ import { useState } from 'react';
 import './Footer.css';
 
 interface FooterProps {
-  onEmailSubmit?: (email: string) => void;
-  onMenuClick?: (item: string) => void;
-  onPolicyClick?: (item: string) => void;
-  onSocialClick?: (platform: string) => void;
-  onCountryChange?: (country: any) => void;
-  className?: string;
+  onEmailSubmit?: (email: string) => void;      // Callback para el formulario de newsletter
+  onMenuClick?: (item: string) => void;         // Callback para items del menú
+  onPolicyClick?: (item: string) => void;       // Callback para links de políticas
+  onSocialClick?: (platform: string) => void;   // Callback para iconos sociales
+  onCountryChange?: (country: any) => void;     // Callback para cambio de país
+  className?: string;                           // Clases CSS adicionales
 }
 
 const Footer: React.FC<FooterProps> = ({
@@ -18,7 +18,10 @@ const Footer: React.FC<FooterProps> = ({
   onCountryChange,
   className = ""
 }) => {
+  // Estado para el email del formulario de newsletter
   const [email, setEmail] = useState('');
+  
+  // Estado para el país seleccionado (Estados Unidos por defecto)
   const [selectedCountry, setSelectedCountry] = useState({
     code: 'US',
     name: 'United States',
@@ -26,6 +29,7 @@ const Footer: React.FC<FooterProps> = ({
     currency: 'USD'
   });
 
+  // Lista de países disponibles para selección
   const countries = [
     { code: 'US', name: 'United States', flag: '🇺🇸', currency: 'USD' },
     { code: 'CA', name: 'Canada', flag: '🇨🇦', currency: 'CAD' },
@@ -34,8 +38,10 @@ const Footer: React.FC<FooterProps> = ({
     { code: 'AU', name: 'Australia', flag: '🇦🇺', currency: 'AUD' }
   ];
 
+  // Items del menú principal del footer
   const menuItems = ['Collections', 'Categories', 'Shop All', 'More'];
   
+  // Items de políticas y enlaces sociales
   const policyItems = [
     'Discord.com',
     'Twitter', 
@@ -47,19 +53,22 @@ const Footer: React.FC<FooterProps> = ({
     'Contact Us'
   ];
 
+  // Métodos de pago aceptados
   const paymentMethods = [
     'Amex', 'Apple Pay', 'Diners Club', 'Discover', 
     'Google Pay', 'Mastercard', 'Shop Pay', 'Visa'
   ];
 
+  // Manejador para el envío del formulario de newsletter
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (onEmailSubmit && email.trim()) {
       onEmailSubmit(email.trim());
-      setEmail('');
+      setEmail(''); // Limpia el campo después del envío
     }
   };
 
+  // Manejador para la selección de país
   const handleCountrySelect = (country: any) => {
     setSelectedCountry(country);
     if (onCountryChange) {
@@ -71,11 +80,12 @@ const Footer: React.FC<FooterProps> = ({
     <footer className={`footer ${className}`}>
       <div className="footer-container">
         
-        {/* Newsletter Section */}
+        {/* Sección de Newsletter */}
         <div className="footer-newsletter">
           <h2 className="footer-newsletter-title">Subscribe to the Latest and Greatest.</h2>
           <p className="footer-newsletter-subtitle">Official Discord merch news, contests and updates!</p>
           
+          {/* Formulario de suscripción */}
           <form className="footer-newsletter-form" onSubmit={handleEmailSubmit}>
             <div className="footer-email-container">
               <input
@@ -93,13 +103,13 @@ const Footer: React.FC<FooterProps> = ({
           </form>
         </div>
 
-        {/* Divider */}
+        {/* Divisor visual */}
         <div className="footer-divider"></div>
 
-        {/* Main Content */}
+        {/* Contenido principal del footer */}
         <div className="footer-content">
           
-          {/* Menu Column */}
+          {/* Columna de Menú */}
           <div className="footer-column">
             <h3 className="footer-column-title">Menu</h3>
             <ul className="footer-column-list">
@@ -116,7 +126,7 @@ const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
 
-          {/* Policies Column */}
+          {/* Columna de Políticas */}
           <div className="footer-column">
             <h3 className="footer-column-title">Policies</h3>
             <ul className="footer-column-list">
@@ -133,10 +143,11 @@ const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
 
-          {/* Follow Us Column */}
+          {/* Columna de Redes Sociales */}
           <div className="footer-column">
             <h3 className="footer-column-title">Follow us</h3>
             <div className="footer-social-icons">
+              {/* Botón de Twitter */}
               <button
                 className="footer-social-icon"
                 onClick={() => onSocialClick && onSocialClick('twitter')}
@@ -147,6 +158,7 @@ const Footer: React.FC<FooterProps> = ({
                 </svg>
               </button>
               
+              {/* Botón de Facebook */}
               <button
                 className="footer-social-icon"
                 onClick={() => onSocialClick && onSocialClick('facebook')}
@@ -157,6 +169,7 @@ const Footer: React.FC<FooterProps> = ({
                 </svg>
               </button>
               
+              {/* Botón de Instagram */}
               <button
                 className="footer-social-icon"
                 onClick={() => onSocialClick && onSocialClick('instagram')}
@@ -170,7 +183,7 @@ const Footer: React.FC<FooterProps> = ({
           </div>
         </div>
 
-        {/* Bottom Section */}
+        {/* Sección inferior del footer */}
         <div className="footer-bottom">
           
           {/* Copyright */}
@@ -178,10 +191,10 @@ const Footer: React.FC<FooterProps> = ({
             <p>Copyright © 2025 Discord Powered by DOTEXE. Powered by Shopify</p>
           </div>
 
-          {/* Country & Payment */}
+          {/* Sección derecha: País y métodos de pago */}
           <div className="footer-right">
             
-            {/* Country Dropdown */}
+            {/* Dropdown de selección de país */}
             <div className="footer-country-dropdown">
               <select
                 value={selectedCountry.code}
@@ -199,7 +212,7 @@ const Footer: React.FC<FooterProps> = ({
               </select>
             </div>
 
-            {/* Payment Methods */}
+            {/* Iconos de métodos de pago */}
             <div className="footer-payment-methods">
               {paymentMethods.map((method, index) => (
                 <div key={index} className="footer-payment-icon" title={method}>

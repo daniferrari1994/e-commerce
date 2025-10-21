@@ -5,13 +5,20 @@ export interface ProductSpecification {
 }
 
 export interface ProductData {
+  id: string;
   title: string;
-  price?: string;
-  description?: string;
+  price: string;
+  description: string;
+  stock: number;
+  category: string;
+  subcategory: string;
+  collection?: string;
   specifications?: ProductSpecification[];
   image: string;
   alt: string;
   url?: string;
+  featured?: boolean;
+  tags?: string[];
 }
 
 // Tipos para carousels
@@ -47,13 +54,7 @@ export interface User {
   avatar?: string;
 }
 
-// Tipos para menús y navegación
-export interface MenuItem {
-  id: string;
-  label: string;
-  icon?: string;
-}
-
+// Tipos para dropdowns y opciones
 export interface DropdownOption {
   id: string;
   label: string;
@@ -89,3 +90,6 @@ export interface AppConfiguration {
 // Tipos utilitarios
 export type Optional<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
 export type RequiredField<T, K extends keyof T> = T & Required<Pick<T, K>>;
+
+// Exportar tipos de SectionView
+export * from './sectionView';

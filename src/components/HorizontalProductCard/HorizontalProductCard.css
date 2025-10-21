@@ -1,0 +1,189 @@
+/* Contenedor principal de la card */
+.horizontal-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 300px;
+}
+
+.horizontal-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Sección de contenido (lado izquierdo) */
+.horizontal-card__content {
+  flex: 1;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título del producto */
+.horizontal-card__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2c2f36;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+/* Precio del producto */
+.horizontal-card__price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5865F2;
+  margin-bottom: 1rem;
+}
+
+/* Descripción del producto */
+.horizontal-card__description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de características */
+.horizontal-card__features {
+  margin-bottom: 2rem;
+}
+
+/* Cada característica individual */
+.horizontal-card__feature {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.horizontal-card__feature-label {
+  font-weight: 600;
+  color: #2c2f36;
+}
+
+.horizontal-card__feature-value {
+  color: #666;
+}
+
+/* Botón Quick Buy */
+.horizontal-card__button {
+  background: #5865F2;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+}
+
+.horizontal-card__button:hover {
+  background: #4752C4;
+  transform: translateY(-1px);
+}
+
+/* Contenedor de imagen (lado derecho) */
+.horizontal-card__image-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+/* Imagen principal */
+.horizontal-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+/* Efectos hover para diferentes tipos */
+.horizontal-card__image--zoom:hover {
+  transform: scale(1.1);
+}
+
+.horizontal-card__image--fade:hover {
+  opacity: 0.8;
+  filter: brightness(1.1);
+}
+
+.horizontal-card__image--slide:hover {
+  transform: translateX(-10px);
+}
+
+/* Imagen hover (imagen secundaria) */
+.horizontal-card__hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.horizontal-card__image-container:hover .horizontal-card__hover-image {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .horizontal-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .horizontal-card__content {
+    padding: 1.5rem;
+  }
+  
+  .horizontal-card__title {
+    font-size: 1.5rem;
+  }
+  
+  .horizontal-card__price {
+    font-size: 1.25rem;
+  }
+  
+  .horizontal-card__image-container {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal-card__content {
+    padding: 1rem;
+  }
+  
+  .horizontal-card__title {
+    font-size: 1.25rem;
+  }
+  
+  .horizontal-card__price {
+    font-size: 1.1rem;
+  }
+  
+  .horizontal-card__description {
+    font-size: 0.9rem;
+  }
+  
+  .horizontal-card__feature {
+    font-size: 0.8rem;
+  }
+}

@@ -1,5 +1,3 @@
-// Exportar todos los datos desde un punto central
-export * from './countries';
-export * from './navigation';
-export * from './menus';
-export * from './products';
+// Sistema centralizado de datos - Punto único de acceso
+export * from './centralData';
+export * from './dataUtils';

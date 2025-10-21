@@ -3,11 +3,9 @@ import type {
   SearchHandler, 
   CountryChangeHandler, 
   MenuClickHandler, 
-  ProductActionHandler, 
-  CollectionClickHandler,
+  ProductActionHandler,
   CarouselImage,
   ProductData,
-  Collection,
   Country
 } from '../types';
 
@@ -18,19 +16,12 @@ interface UseAppHandlersReturn {
   handleUserMenuClick: MenuClickHandler;
   handleCartClick: () => void;
   
-  // Secondary navigation handlers
-  handleCollectionSelect: (collection: string) => void;
-  handleCategorySelect: (category: string) => void;
-  handleShopAllClick: () => void;
-  handleMoreSelect: (option: string) => void;
-  
   // Carousel handlers
   handleImageClick: (image: CarouselImage, index: number) => void;
   handleShopNowClick: (url: string, title: string) => void;
   
   // Product handlers
   handleProductAction: ProductActionHandler;
-  handleCollectionClick: CollectionClickHandler;
 }
 
 export const useAppHandlers = (): UseAppHandlersReturn => {
@@ -55,27 +46,6 @@ export const useAppHandlers = (): UseAppHandlersReturn => {
     // TODO: Implementar apertura del carrito
   }, []);
 
-  // Secondary navigation handlers
-  const handleCollectionSelect = useCallback((collection: string) => {
-    console.log('Colección seleccionada:', collection);
-    // TODO: Implementar navegación a colección
-  }, []);
-
-  const handleCategorySelect = useCallback((category: string) => {
-    console.log('Categoría seleccionada:', category);
-    // TODO: Implementar navegación a categoría
-  }, []);
-
-  const handleShopAllClick = useCallback(() => {
-    console.log('Shop All clickeado');
-    // TODO: Implementar navegación a todos los productos
-  }, []);
-
-  const handleMoreSelect = useCallback((option: string) => {
-    console.log('Opción More seleccionada:', option);
-    // TODO: Implementar navegación de opciones adicionales
-  }, []);
-
   // Carousel handlers
   const handleImageClick = useCallback((image: CarouselImage, index: number) => {
     console.log('Imagen clickeada:', image, 'índice:', index);
@@ -85,7 +55,6 @@ export const useAppHandlers = (): UseAppHandlersReturn => {
   const handleShopNowClick = useCallback((url: string, title: string) => {
     console.log('Shop Now clickeado:', title, 'URL:', url);
     // TODO: Implementar navegación real
-    // window.location.href = url;
   }, []);
 
   // Product handlers
@@ -97,11 +66,6 @@ export const useAppHandlers = (): UseAppHandlersReturn => {
     }
   }, []);
 
-  const handleCollectionClick = useCallback<CollectionClickHandler>((collection: Collection | string) => {
-    console.log('Colección clickeada:', collection);
-    // TODO: Implementar navegación a la colección
-  }, []);
-
   return {
     // Navigation
     handleSearch,
@@ -109,18 +73,11 @@ export const useAppHandlers = (): UseAppHandlersReturn => {
     handleUserMenuClick,
     handleCartClick,
     
-    // Secondary navigation
-    handleCollectionSelect,
-    handleCategorySelect,
-    handleShopAllClick,
-    handleMoreSelect,
-    
     // Carousel
     handleImageClick,
     handleShopNowClick,
     
     // Products
     handleProductAction,
-    handleCollectionClick,
   };
 };

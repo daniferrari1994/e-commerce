@@ -1,0 +1,237 @@
+/* Contenedor principal */
+.section-view {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Breadcrumb */
+.section-breadcrumb {
+  margin: 1rem 0;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumb-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #0056b3;
+}
+
+.breadcrumb-current {
+  color: #333;
+  font-weight: 500;
+}
+
+.breadcrumb-separator {
+  color: #999;
+  font-weight: 300;
+}
+
+/* Banner de sección */
+.section-banner {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-banner-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Mismo tamaño que el carousel */
+}
+
+.section-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-banner-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+/* Título de la sección */
+.section-header {
+  margin: 2rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Controles (Dropdowns) */
+.section-controls {
+  margin: 2rem 0;
+}
+
+.section-controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.left-dropdowns {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.right-dropdown {
+  flex-shrink: 0;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 150px;
+}
+
+.dropdown-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.dropdown-select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  font-size: 0.875rem;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dropdown-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.dropdown-select:hover {
+  border-color: #999;
+}
+
+/* Contador de productos */
+.section-product-count {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.product-count-text {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Área de contenido */
+.section-content {
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-view {
+    padding: 0 0.5rem;
+  }
+
+  .section-banner-container {
+    height: 200px;
+  }
+
+  .section-banner-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-controls-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .left-dropdowns {
+    flex-direction: column;
+  }
+
+  .dropdown-container {
+    min-width: auto;
+  }
+
+  .breadcrumb-list {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-banner-container {
+    height: 150px;
+  }
+
+  .section-banner-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+}

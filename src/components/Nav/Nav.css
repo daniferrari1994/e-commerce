@@ -25,16 +25,11 @@
   flex-shrink: 0;
 }
 
-.logo-discord {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.logo-discord:hover {
-  background-color: #f0f0f0;
+.discord-logo-image {
+  height: auto;
+  width: 370px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
 }
 
 .logo-brand {
@@ -45,11 +40,13 @@
 .brand-text {
   font-size: 1.5rem;
   font-weight: 700;
+  font-family: var(--font-primary, 'Poppins', sans-serif);
   color: #333;
   background: linear-gradient(135deg, #5865F2, #7289DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: 0.5px;
 }
 
 .nav-actions {

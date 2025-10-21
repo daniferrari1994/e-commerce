@@ -1,0 +1,794 @@
+{
+  "apparel": {
+    "tees": [
+      {
+        "id": "tee-001",
+        "title": "DISXCORE Gaming Tee",
+        "price": "$29.99",
+        "description": "Premium cotton t-shirt featuring the iconic DISXCORE design. Perfect for gaming sessions and everyday wear with Discord's signature styling.",
+        "stock": 150,
+        "category": "apparel",
+        "subcategory": "tees",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop",
+        "alt": "DISXCORE Gaming Tee",
+        "featured": true,
+        "tags": ["gaming", "cotton", "unisex"],
+        "specifications": [
+          { "label": "Material", "value": "100% Premium Cotton" },
+          { "label": "Fit", "value": "Regular Unisex" },
+          { "label": "Care", "value": "Machine Wash Cold" }
+        ]
+      },
+      {
+        "id": "tee-002",
+        "title": "Wumpus Party Tee",
+        "price": "$24.99",
+        "description": "Celebrate with Wumpus! Soft and comfortable tee featuring Discord's beloved mascot in a festive party design.",
+        "stock": 89,
+        "category": "apparel",
+        "subcategory": "tees",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&h=500&fit=crop",
+        "alt": "Wumpus Party Tee",
+        "tags": ["wumpus", "party", "mascot"],
+        "specifications": [
+          { "label": "Material", "value": "Organic Cotton Blend" },
+          { "label": "Fit", "value": "Relaxed Fit" },
+          { "label": "Care", "value": "Machine Wash Warm" }
+        ]
+      },
+      {
+        "id": "tee-003",
+        "title": "Daydream Doodles Art Tee",
+        "price": "$27.99",
+        "description": "Express your creativity with this artistic daydream doodles design. Limited edition print with vibrant colors and whimsical patterns.",
+        "stock": 45,
+        "category": "apparel",
+        "subcategory": "tees",
+        "collection": "Daydream Doodles",
+        "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=500&h=500&fit=crop",
+        "alt": "Daydream Doodles Art Tee",
+        "tags": ["art", "creative", "limited"],
+        "specifications": [
+          { "label": "Material", "value": "100% Ring-Spun Cotton" },
+          { "label": "Print", "value": "Water-Based Eco Ink" },
+          { "label": "Fit", "value": "Slim Fit" }
+        ]
+      }
+    ],
+    "tops": [
+      {
+        "id": "top-001",
+        "title": "Discord Developer Tank Top",
+        "price": "$32.99",
+        "description": "Show your coding skills with this sleek developer tank top. Breathable fabric perfect for intense programming sessions.",
+        "stock": 67,
+        "category": "apparel",
+        "subcategory": "tops",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=500&h=500&fit=crop",
+        "alt": "Discord Developer Tank Top",
+        "tags": ["developer", "coding", "breathable"],
+        "specifications": [
+          { "label": "Material", "value": "Moisture-Wicking Polyester" },
+          { "label": "Fit", "value": "Athletic Cut" },
+          { "label": "Care", "value": "Machine Wash Cold" }
+        ]
+      },
+      {
+        "id": "top-002",
+        "title": "Idle Nights Crop Top",
+        "price": "$28.99",
+        "description": "Minimalist crop top perfect for those laid-back gaming nights. Soft, stretchy fabric with subtle Discord branding.",
+        "stock": 92,
+        "category": "apparel",
+        "subcategory": "tops",
+        "collection": "Idle Nights",
+        "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=500&fit=crop",
+        "alt": "Idle Nights Crop Top",
+        "tags": ["crop", "minimal", "comfortable"],
+        "specifications": [
+          { "label": "Material", "value": "Cotton-Spandex Blend" },
+          { "label": "Fit", "value": "Cropped Fit" },
+          { "label": "Stretch", "value": "4-Way Stretch" }
+        ]
+      },
+      {
+        "id": "top-003",
+        "title": "@everyone Notification Top",
+        "price": "$35.99",
+        "description": "Get everyone's attention with this bold notification-inspired top. Features Discord's iconic @everyone styling.",
+        "stock": 38,
+        "category": "apparel",
+        "subcategory": "tops",
+        "collection": "@everyone",
+        "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=500&fit=crop",
+        "alt": "@everyone Notification Top",
+        "tags": ["notification", "bold", "iconic"],
+        "specifications": [
+          { "label": "Material", "value": "Premium Cotton Blend" },
+          { "label": "Design", "value": "Reflective Print" },
+          { "label": "Fit", "value": "Oversized" }
+        ]
+      }
+    ],
+    "hoodies": [
+      {
+        "id": "hoodie-001",
+        "title": "DISXCORE Gaming Hoodie",
+        "price": "$79.99",
+        "description": "Ultimate gaming hoodie with premium cotton blend fabric. Features the exclusive DISXCORE design and ultra-comfortable fleece lining.",
+        "stock": 124,
+        "category": "apparel",
+        "subcategory": "hoodies",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
+        "alt": "DISXCORE Gaming Hoodie",
+        "featured": true,
+        "tags": ["gaming", "premium", "fleece"],
+        "specifications": [
+          { "label": "Material", "value": "80% Cotton, 20% Polyester" },
+          { "label": "Lining", "value": "Brushed Fleece" },
+          { "label": "Features", "value": "Kangaroo Pocket, Drawstring Hood" }
+        ]
+      },
+      {
+        "id": "hoodie-002",
+        "title": "Wumpus Cozy Hoodie",
+        "price": "$69.99",
+        "description": "Snuggle up with Wumpus! Extra cozy hoodie featuring embroidered Wumpus design and ultra-soft interior.",
+        "stock": 78,
+        "category": "apparel",
+        "subcategory": "hoodies",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=500&fit=crop",
+        "alt": "Wumpus Cozy Hoodie",
+        "tags": ["wumpus", "cozy", "embroidered"],
+        "specifications": [
+          { "label": "Material", "value": "Cotton-Polyester Blend" },
+          { "label": "Design", "value": "Embroidered Wumpus" },
+          { "label": "Warmth", "value": "Medium Weight" }
+        ]
+      },
+      {
+        "id": "hoodie-003",
+        "title": "Developer Mode Hoodie",
+        "price": "$74.99",
+        "description": "Enable developer mode with this tech-inspired hoodie. Features subtle code patterns and modern fit for the coding community.",
+        "stock": 56,
+        "category": "apparel",
+        "subcategory": "hoodies",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1509485361943-e84a16b50f82?w=500&h=500&fit=crop",
+        "alt": "Developer Mode Hoodie",
+        "tags": ["developer", "code", "tech"],
+        "specifications": [
+          { "label": "Material", "value": "Premium Cotton" },
+          { "label": "Pattern", "value": "Subtle Code Print" },
+          { "label": "Fit", "value": "Modern Regular" }
+        ]
+      }
+    ],
+    "sweatshirts": [
+      {
+        "id": "sweat-001",
+        "title": "Idle Nights Sweatshirt",
+        "price": "$64.99",
+        "description": "Perfect for those chill gaming sessions. Oversized comfort fit with minimalist design and ultra-soft fleece interior.",
+        "stock": 103,
+        "category": "apparel",
+        "subcategory": "sweatshirts",
+        "collection": "Idle Nights",
+        "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
+        "alt": "Idle Nights Sweatshirt",
+        "tags": ["chill", "oversized", "minimal"],
+        "specifications": [
+          { "label": "Material", "value": "70% Cotton, 30% Polyester" },
+          { "label": "Fit", "value": "Oversized Comfort" },
+          { "label": "Interior", "value": "Brushed Fleece" }
+        ]
+      },
+      {
+        "id": "sweat-002",
+        "title": "@here Alert Sweatshirt",
+        "price": "$59.99",
+        "description": "Stay alert and comfortable with this @here inspired sweatshirt. Features Discord's notification styling in premium fabric.",
+        "stock": 87,
+        "category": "apparel",
+        "subcategory": "sweatshirts",
+        "collection": "@here",
+        "image": "https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?w=500&h=500&fit=crop",
+        "alt": "@here Alert Sweatshirt",
+        "tags": ["alert", "notification", "comfort"],
+        "specifications": [
+          { "label": "Material", "value": "Cotton-Poly Blend" },
+          { "label": "Print", "value": "@here Notification Style" },
+          { "label": "Comfort", "value": "Relaxed Fit" }
+        ]
+      },
+      {
+        "id": "sweat-003",
+        "title": "Daydream Pastel Sweatshirt",
+        "price": "$62.99",
+        "description": "Dreamy pastel colors meet comfort in this artistic sweatshirt. Soft fabric with whimsical daydream doodles design.",
+        "stock": 71,
+        "category": "apparel",
+        "subcategory": "sweatshirts",
+        "collection": "Daydream Doodles",
+        "image": "https://images.unsplash.com/photo-1544376664-80b17f09d399?w=500&h=500&fit=crop",
+        "alt": "Daydream Pastel Sweatshirt",
+        "tags": ["pastel", "artistic", "dreamy"],
+        "specifications": [
+          { "label": "Material", "value": "Soft Cotton Blend" },
+          { "label": "Colors", "value": "Pastel Palette" },
+          { "label": "Design", "value": "Artistic Doodles" }
+        ]
+      }
+    ],
+    "outerwear": [
+      {
+        "id": "outer-001",
+        "title": "Discord Windbreaker",
+        "price": "$89.99",
+        "description": "Weather-resistant windbreaker with Discord branding. Perfect for outdoor gaming events and conventions.",
+        "stock": 45,
+        "category": "apparel",
+        "subcategory": "outerwear",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=500&fit=crop",
+        "alt": "Discord Windbreaker",
+        "tags": ["weather-resistant", "outdoor", "conventions"],
+        "specifications": [
+          { "label": "Material", "value": "Water-Resistant Nylon" },
+          { "label": "Features", "value": "Full Zip, Hood" },
+          { "label": "Weather", "value": "Wind & Light Rain Resistant" }
+        ]
+      },
+      {
+        "id": "outer-002",
+        "title": "Wumpus Winter Jacket",
+        "price": "$119.99",
+        "description": "Stay warm with Wumpus! Insulated winter jacket with cozy lining and adorable Wumpus embroidery.",
+        "stock": 32,
+        "category": "apparel",
+        "subcategory": "outerwear",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&h=500&fit=crop",
+        "alt": "Wumpus Winter Jacket",
+        "tags": ["winter", "insulated", "warm"],
+        "specifications": [
+          { "label": "Insulation", "value": "Synthetic Fill" },
+          { "label": "Warmth", "value": "Cold Weather Protection" },
+          { "label": "Design", "value": "Embroidered Wumpus" }
+        ]
+      },
+      {
+        "id": "outer-003",
+        "title": "Developer Code Bomber",
+        "price": "$94.99",
+        "description": "Sleek bomber jacket with subtle code patterns. Perfect for developers who want to show their passion for coding in style.",
+        "stock": 28,
+        "category": "apparel",
+        "subcategory": "outerwear",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1544376664-80b17f09d399?w=500&h=500&fit=crop",
+        "alt": "Developer Code Bomber",
+        "tags": ["bomber", "developer", "style"],
+        "specifications": [
+          { "label": "Style", "value": "Classic Bomber Cut" },
+          { "label": "Pattern", "value": "Subtle Code Elements" },
+          { "label": "Lining", "value": "Smooth Polyester" }
+        ]
+      }
+    ],
+    "bottoms": [
+      {
+        "id": "bottom-001",
+        "title": "Gaming Comfort Sweatpants",
+        "price": "$54.99",
+        "description": "Ultimate comfort for marathon gaming sessions. Soft fleece interior with adjustable waistband and deep pockets.",
+        "stock": 112,
+        "category": "apparel",
+        "subcategory": "bottoms",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=500&fit=crop",
+        "alt": "Gaming Comfort Sweatpants",
+        "tags": ["gaming", "comfort", "fleece"],
+        "specifications": [
+          { "label": "Material", "value": "Cotton-Polyester Fleece" },
+          { "label": "Features", "value": "Adjustable Waistband, Deep Pockets" },
+          { "label": "Comfort", "value": "Relaxed Fit" }
+        ]
+      },
+      {
+        "id": "bottom-002",
+        "title": "Idle Nights Pajama Pants",
+        "price": "$39.99",
+        "description": "Cozy pajama pants perfect for late-night gaming. Soft cotton with elastic waistband and fun Wumpus pattern.",
+        "stock": 95,
+        "category": "apparel",
+        "subcategory": "bottoms",
+        "collection": "Idle Nights",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=500&fit=crop",
+        "alt": "Idle Nights Pajama Pants",
+        "tags": ["pajama", "cozy", "pattern"],
+        "specifications": [
+          { "label": "Material", "value": "100% Cotton" },
+          { "label": "Pattern", "value": "Wumpus All-Over Print" },
+          { "label": "Waistband", "value": "Elastic with Drawstring" }
+        ]
+      },
+      {
+        "id": "bottom-003",
+        "title": "Developer Cargo Shorts",
+        "price": "$49.99",
+        "description": "Functional cargo shorts with multiple pockets for all your tech gadgets. Durable fabric perfect for hackathons and conventions.",
+        "stock": 73,
+        "category": "apparel",
+        "subcategory": "bottoms",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1506629905681-19d3d4924aef?w=500&h=500&fit=crop",
+        "alt": "Developer Cargo Shorts",
+        "tags": ["cargo", "functional", "tech"],
+        "specifications": [
+          { "label": "Material", "value": "Durable Cotton Canvas" },
+          { "label": "Pockets", "value": "6 Functional Pockets" },
+          { "label": "Fit", "value": "Regular Straight" }
+        ]
+      }
+    ]
+  },
+  "goods": {
+    "plushies": [
+      {
+        "id": "plush-001",
+        "title": "Wumpus Original Plushie",
+        "price": "$24.99",
+        "description": "The original and beloved Wumpus plushie! Super soft and cuddly, perfect for your desk or gaming setup.",
+        "stock": 89,
+        "category": "goods",
+        "subcategory": "plushies",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1530325553146-0113c5b9cd0f?w=500&h=500&fit=crop",
+        "alt": "Wumpus Original Plushie",
+        "featured": true,
+        "tags": ["wumpus", "soft", "desk"],
+        "specifications": [
+          { "label": "Size", "value": "8 inches tall" },
+          { "label": "Material", "value": "Premium Polyester Fill" },
+          { "label": "Care", "value": "Surface Wash Only" }
+        ]
+      },
+      {
+        "id": "plush-002",
+        "title": "Sleeping Wumpus Plushie",
+        "price": "$27.99",
+        "description": "Adorable sleeping Wumpus with closed eyes and peaceful expression. Perfect companion for bedtime or relaxation.",
+        "stock": 56,
+        "category": "goods",
+        "subcategory": "plushies",
+        "collection": "Idle Nights",
+        "image": "https://images.unsplash.com/photo-1503594384566-461fe158e797?w=500&h=500&fit=crop",
+        "alt": "Sleeping Wumpus Plushie",
+        "tags": ["sleeping", "peaceful", "bedtime"],
+        "specifications": [
+          { "label": "Size", "value": "10 inches long" },
+          { "label": "Position", "value": "Lying Down" },
+          { "label": "Features", "value": "Closed Eyes, Peaceful Expression" }
+        ]
+      },
+      {
+        "id": "plush-003",
+        "title": "Mini Wumpus Collection Set",
+        "price": "$34.99",
+        "description": "Set of 3 mini Wumpus plushies in different poses and expressions. Collect them all and create your own Wumpus army!",
+        "stock": 42,
+        "category": "goods",
+        "subcategory": "plushies",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
+        "alt": "Mini Wumpus Collection Set",
+        "tags": ["mini", "collection", "set"],
+        "specifications": [
+          { "label": "Quantity", "value": "3 Mini Plushies" },
+          { "label": "Size", "value": "4 inches each" },
+          { "label": "Variety", "value": "Different Poses" }
+        ]
+      }
+    ],
+    "keyboards": [
+      {
+        "id": "keyboard-001",
+        "title": "Discord Mechanical Gaming Keyboard",
+        "price": "$149.99",
+        "description": "Premium mechanical keyboard with Discord-themed keycaps and RGB lighting. Cherry MX switches for ultimate gaming performance.",
+        "stock": 34,
+        "category": "goods",
+        "subcategory": "keyboards",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=500&h=500&fit=crop",
+        "alt": "Discord Mechanical Gaming Keyboard",
+        "featured": true,
+        "tags": ["mechanical", "rgb", "gaming"],
+        "specifications": [
+          { "label": "Switches", "value": "Cherry MX Red" },
+          { "label": "Lighting", "value": "RGB Backlit" },
+          { "label": "Layout", "value": "Full Size (104 keys)" }
+        ]
+      },
+      {
+        "id": "keyboard-002",
+        "title": "Wumpus Wireless Keyboard",
+        "price": "$89.99",
+        "description": "Cute wireless keyboard with Wumpus-themed design. Perfect for everyday use with long battery life and comfortable typing.",
+        "stock": 67,
+        "category": "goods",
+        "subcategory": "keyboards",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&h=500&fit=crop",
+        "alt": "Wumpus Wireless Keyboard",
+        "tags": ["wireless", "cute", "battery"],
+        "specifications": [
+          { "label": "Connection", "value": "2.4GHz Wireless" },
+          { "label": "Battery", "value": "Up to 3 months" },
+          { "label": "Layout", "value": "Compact 87 keys" }
+        ]
+      },
+      {
+        "id": "keyboard-003",
+        "title": "Developer Code Keycap Set",
+        "price": "$59.99",
+        "description": "Custom keycap set with programming symbols and Discord developer themes. Compatible with most mechanical keyboards.",
+        "stock": 23,
+        "category": "goods",
+        "subcategory": "keyboards",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=500&fit=crop",
+        "alt": "Developer Code Keycap Set",
+        "tags": ["keycaps", "programming", "custom"],
+        "specifications": [
+          { "label": "Material", "value": "PBT Doubleshot" },
+          { "label": "Profile", "value": "Cherry Profile" },
+          { "label": "Compatibility", "value": "Cherry MX Style" }
+        ]
+      }
+    ],
+    "streaming_gear": [
+      {
+        "id": "stream-001",
+        "title": "Discord Streaming Microphone",
+        "price": "$129.99",
+        "description": "Professional USB microphone with Discord branding. Crystal clear audio quality perfect for streaming and voice chat.",
+        "stock": 45,
+        "category": "goods",
+        "subcategory": "streaming_gear",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=500&h=500&fit=crop",
+        "alt": "Discord Streaming Microphone",
+        "tags": ["microphone", "streaming", "professional"],
+        "specifications": [
+          { "label": "Connection", "value": "USB-C" },
+          { "label": "Frequency Response", "value": "20Hz - 20kHz" },
+          { "label": "Features", "value": "Mute Button, Gain Control" }
+        ]
+      },
+      {
+        "id": "stream-002",
+        "title": "Wumpus Webcam Cover",
+        "price": "$12.99",
+        "description": "Adorable Wumpus-shaped webcam cover for privacy protection. Easy to slide open and close with cute design.",
+        "stock": 234,
+        "category": "goods",
+        "subcategory": "streaming_gear",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500&h=500&fit=crop",
+        "alt": "Wumpus Webcam Cover",
+        "tags": ["webcam", "privacy", "cute"],
+        "specifications": [
+          { "label": "Material", "value": "Durable Plastic" },
+          { "label": "Compatibility", "value": "Most Laptops & Monitors" },
+          { "label": "Design", "value": "Sliding Wumpus Shape" }
+        ]
+      },
+      {
+        "id": "stream-003",
+        "title": "RGB Gaming Light Panel Set",
+        "price": "$79.99",
+        "description": "Set of 6 RGB light panels with Discord-themed lighting effects. Create the perfect streaming ambiance for your setup.",
+        "stock": 38,
+        "category": "goods",
+        "subcategory": "streaming_gear",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&h=500&fit=crop",
+        "alt": "RGB Gaming Light Panel Set",
+        "tags": ["rgb", "lighting", "ambiance"],
+        "specifications": [
+          { "label": "Quantity", "value": "6 Light Panels" },
+          { "label": "Colors", "value": "16 Million RGB Colors" },
+          { "label": "Control", "value": "Mobile App Compatible" }
+        ]
+      }
+    ],
+    "headwear": [
+      {
+        "id": "hat-001",
+        "title": "Discord Logo Snapback",
+        "price": "$34.99",
+        "description": "Classic snapback with embroidered Discord logo. Adjustable fit with premium construction and curved brim.",
+        "stock": 87,
+        "category": "goods",
+        "subcategory": "headwear",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=500&h=500&fit=crop",
+        "alt": "Discord Logo Snapback",
+        "tags": ["snapback", "logo", "adjustable"],
+        "specifications": [
+          { "label": "Style", "value": "Snapback" },
+          { "label": "Material", "value": "Cotton-Polyester Blend" },
+          { "label": "Features", "value": "Embroidered Logo, Curved Brim" }
+        ]
+      },
+      {
+        "id": "hat-002",
+        "title": "Wumpus Beanie",
+        "price": "$24.99",
+        "description": "Cozy knit beanie with adorable Wumpus embroidery. Perfect for cold weather and showing your Discord love.",
+        "stock": 123,
+        "category": "goods",
+        "subcategory": "headwear",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=500&h=500&fit=crop",
+        "alt": "Wumpus Beanie",
+        "tags": ["beanie", "warm", "embroidery"],
+        "specifications": [
+          { "label": "Material", "value": "Acrylic Knit" },
+          { "label": "Warmth", "value": "Cold Weather Protection" },
+          { "label": "Design", "value": "Embroidered Wumpus" }
+        ]
+      },
+      {
+        "id": "hat-003",
+        "title": "Developer Dad Hat",
+        "price": "$29.99",
+        "description": "Minimalist dad hat with subtle developer-themed embroidery. Comfortable everyday wear for coding enthusiasts.",
+        "stock": 156,
+        "category": "goods",
+        "subcategory": "headwear",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500&h=500&fit=crop",
+        "alt": "Developer Dad Hat",
+        "tags": ["dad hat", "minimal", "developer"],
+        "specifications": [
+          { "label": "Style", "value": "Dad Hat" },
+          { "label": "Fit", "value": "Adjustable Strap" },
+          { "label": "Design", "value": "Subtle Code Elements" }
+        ]
+      }
+    ],
+    "drinkware": [
+      {
+        "id": "drink-001",
+        "title": "Discord Gaming Mug",
+        "price": "$19.99",
+        "description": "Perfect for your morning coffee or late-night gaming fuel. Ceramic mug with Discord logo and gaming-themed quotes.",
+        "stock": 167,
+        "category": "goods",
+        "subcategory": "drinkware",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500&h=500&fit=crop",
+        "alt": "Discord Gaming Mug",
+        "tags": ["mug", "coffee", "gaming"],
+        "specifications": [
+          { "label": "Material", "value": "Ceramic" },
+          { "label": "Capacity", "value": "11 oz" },
+          { "label": "Care", "value": "Dishwasher Safe" }
+        ]
+      },
+      {
+        "id": "drink-002",
+        "title": "Wumpus Travel Tumbler",
+        "price": "$32.99",
+        "description": "Insulated travel tumbler with cute Wumpus design. Keeps drinks hot or cold for hours, perfect for on-the-go gaming.",
+        "stock": 78,
+        "category": "goods",
+        "subcategory": "drinkware",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop",
+        "alt": "Wumpus Travel Tumbler",
+        "tags": ["tumbler", "insulated", "travel"],
+        "specifications": [
+          { "label": "Material", "value": "Stainless Steel" },
+          { "label": "Capacity", "value": "20 oz" },
+          { "label": "Insulation", "value": "Double Wall Vacuum" }
+        ]
+      },
+      {
+        "id": "drink-003",
+        "title": "Developer Code Water Bottle",
+        "price": "$27.99",
+        "description": "Stay hydrated while coding! Water bottle with programming syntax patterns and motivational coding quotes.",
+        "stock": 92,
+        "category": "goods",
+        "subcategory": "drinkware",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
+        "alt": "Developer Code Water Bottle",
+        "tags": ["water bottle", "coding", "hydration"],
+        "specifications": [
+          { "label": "Material", "value": "BPA-Free Plastic" },
+          { "label": "Capacity", "value": "32 oz" },
+          { "label": "Features", "value": "Leak-Proof, Wide Mouth" }
+        ]
+      }
+    ],
+    "bags": [
+      {
+        "id": "bag-001",
+        "title": "Discord Gaming Backpack",
+        "price": "$69.99",
+        "description": "Spacious gaming backpack with padded laptop compartment and Discord branding. Perfect for LAN parties and conventions.",
+        "stock": 45,
+        "category": "goods",
+        "subcategory": "bags",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
+        "alt": "Discord Gaming Backpack",
+        "tags": ["backpack", "gaming", "laptop"],
+        "specifications": [
+          { "label": "Capacity", "value": "25 Liters" },
+          { "label": "Laptop Fit", "value": "Up to 17 inches" },
+          { "label": "Features", "value": "Padded Straps, USB Port" }
+        ]
+      },
+      {
+        "id": "bag-002",
+        "title": "Wumpus Tote Bag",
+        "price": "$24.99",
+        "description": "Eco-friendly canvas tote bag with large Wumpus print. Perfect for groceries, books, or carrying your gaming gear.",
+        "stock": 134,
+        "category": "goods",
+        "subcategory": "bags",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&h=500&fit=crop",
+        "alt": "Wumpus Tote Bag",
+        "tags": ["tote", "eco-friendly", "canvas"],
+        "specifications": [
+          { "label": "Material", "value": "100% Cotton Canvas" },
+          { "label": "Size", "value": "15\" x 16\" x 6\"" },
+          { "label": "Handles", "value": "Reinforced Cotton Straps" }
+        ]
+      },
+      {
+        "id": "bag-003",
+        "title": "Developer Laptop Messenger Bag",
+        "price": "$59.99",
+        "description": "Professional messenger bag for developers. Organized compartments for laptop, cables, and coding essentials.",
+        "stock": 67,
+        "category": "goods",
+        "subcategory": "bags",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
+        "alt": "Developer Laptop Messenger Bag",
+        "tags": ["messenger", "professional", "organized"],
+        "specifications": [
+          { "label": "Style", "value": "Messenger Bag" },
+          { "label": "Laptop Fit", "value": "Up to 15 inches" },
+          { "label": "Organization", "value": "Multiple Compartments" }
+        ]
+      }
+    ],
+    "collectibles": [
+      {
+        "id": "collect-001",
+        "title": "Discord Logo Pin Set",
+        "price": "$16.99",
+        "description": "Collectible enamel pin set featuring Discord logos and icons. Perfect for decorating bags, jackets, or pin boards.",
+        "stock": 189,
+        "category": "goods",
+        "subcategory": "collectibles",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1608747193225-ac5ac769c8db?w=500&h=500&fit=crop",
+        "alt": "Discord Logo Pin Set",
+        "tags": ["pins", "enamel", "collectible"],
+        "specifications": [
+          { "label": "Quantity", "value": "Set of 5 pins" },
+          { "label": "Material", "value": "Hard Enamel" },
+          { "label": "Size", "value": "1-1.5 inches each" }
+        ]
+      },
+      {
+        "id": "collect-002",
+        "title": "Wumpus Figurine",
+        "price": "$34.99",
+        "description": "High-quality Wumpus figurine with detailed sculpting and paint. Display-worthy collectible for any Discord fan.",
+        "stock": 78,
+        "category": "goods",
+        "subcategory": "collectibles",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&h=500&fit=crop",
+        "alt": "Wumpus Figurine",
+        "tags": ["figurine", "detailed", "display"],
+        "specifications": [
+          { "label": "Height", "value": "6 inches" },
+          { "label": "Material", "value": "High-Quality PVC" },
+          { "label": "Features", "value": "Detailed Paint, Sturdy Base" }
+        ]
+      },
+      {
+        "id": "collect-003",
+        "title": "Discord Anniversary Poster Set",
+        "price": "$29.99",
+        "description": "Limited edition poster set celebrating Discord's milestones. High-quality prints perfect for framing and display.",
+        "stock": 123,
+        "category": "goods",
+        "subcategory": "collectibles",
+        "collection": "@everyone",
+        "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500&h=500&fit=crop",
+        "alt": "Discord Anniversary Poster Set",
+        "tags": ["posters", "anniversary", "limited"],
+        "specifications": [
+          { "label": "Quantity", "value": "Set of 3 posters" },
+          { "label": "Size", "value": "18\" x 24\" each" },
+          { "label": "Material", "value": "Premium Paper Stock" }
+        ]
+      }
+    ],
+    "accessories": [
+      {
+        "id": "access-001",
+        "title": "Discord Phone Case",
+        "price": "$22.99",
+        "description": "Protective phone case with Discord logo and design. Available for most popular phone models with shock absorption.",
+        "stock": 234,
+        "category": "goods",
+        "subcategory": "accessories",
+        "collection": "DISXCORE",
+        "image": "https://images.unsplash.com/photo-1596558450255-7c0b7be9d56a?w=500&h=500&fit=crop",
+        "alt": "Discord Phone Case",
+        "tags": ["phone case", "protective", "shock"],
+        "specifications": [
+          { "label": "Protection", "value": "Shock Absorption" },
+          { "label": "Material", "value": "TPU + PC" },
+          { "label": "Compatibility", "value": "Multiple Phone Models" }
+        ]
+      },
+      {
+        "id": "access-002",
+        "title": "Wumpus Keychain",
+        "price": "$9.99",
+        "description": "Adorable Wumpus keychain made from soft silicone. Cute addition to your keys, backpack, or bag.",
+        "stock": 345,
+        "category": "goods",
+        "subcategory": "accessories",
+        "collection": "Camp Wumpus",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
+        "alt": "Wumpus Keychain",
+        "tags": ["keychain", "silicone", "cute"],
+        "specifications": [
+          { "label": "Material", "value": "Soft Silicone" },
+          { "label": "Size", "value": "2 inches" },
+          { "label": "Features", "value": "Keyring Attachment" }
+        ]
+      },
+      {
+        "id": "access-003",
+        "title": "Developer Sticker Pack",
+        "price": "$14.99",
+        "description": "Pack of 20 coding and Discord-themed stickers. Perfect for laptops, water bottles, and personalizing your tech gear.",
+        "stock": 456,
+        "category": "goods",
+        "subcategory": "accessories",
+        "collection": "Discord Developers",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
+        "alt": "Developer Sticker Pack",
+        "tags": ["stickers", "coding", "pack"],
+        "specifications": [
+          { "label": "Quantity", "value": "20 stickers" },
+          { "label": "Material", "value": "Vinyl Waterproof" },
+          { "label": "Size", "value": "2-4 inches each" }
+        ]
+      }
+    ]
+  }
+}

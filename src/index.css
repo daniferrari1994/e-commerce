@@ -1,12 +1,21 @@
+/* Variables CSS para fuentes */
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --font-system: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary), var(--font-system);
   line-height: 1.5;
   background-color: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
@@ -21,6 +30,7 @@ main h1 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
   font-weight: 700;
+  font-family: var(--font-primary);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -32,11 +42,33 @@ section h1 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
   font-weight: 700;
+  font-family: var(--font-primary);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+/* Headings hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h1 { font-size: 2.5rem; font-weight: 700; }
+h2 { font-size: 2rem; font-weight: 600; }
+h3 { font-size: 1.75rem; font-weight: 600; }
+h4 { font-size: 1.5rem; font-weight: 600; }
+h5 { font-size: 1.25rem; font-weight: 500; }
+h6 { font-size: 1rem; font-weight: 500; }
+
 p {
   color: #666;
   text-align: center;
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
+
+/* Text utilities */
+.text-primary { font-family: var(--font-primary); }
+.text-secondary { font-family: var(--font-secondary); }
